@@ -6,7 +6,7 @@ $( document ).ready(function() {
 				center: 'title',
 				right: 'month,agendaWeek,agendaDay'
 			},
-			defaultDate: '2015-12-12',
+			defaultDate: '1915-12-12',
 			editable: true,
 			eventLimit: true, // allow "more" link when too many events
 			events: [

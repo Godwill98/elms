@@ -22,7 +22,7 @@ $msg="Your Password succesfully changed";
     <head>
         
         <!-- Title -->
-        <title>ELMS | Password Recovery</title>
+        <title>SLMS | Password Recovery</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta charset="UTF-8">
@@ -111,7 +111,7 @@ $msg="Your Password succesfully changed";
                             </a>
                         </section>
                         <div class="header-title col s3">      
-                            <span class="chapter-title">ELMS | Employee Leave Management System</span>
+                            <span class="chapter-title">SLMS | Smart Leave Management System</span>
                         </div>
                       
                            
@@ -156,11 +156,11 @@ $msg="Your Password succesfully changed";
                                            <form class="col s12" name="signin" method="post">
                                                <div class="input-field col s12">
                                                    <input id="empid" type="text" name="empid" class="validate" autocomplete="off" required >
-                                                   <label for="email">Employee Id</label>
+                                                   <label for="email">Employee </label>
                                                </div>
                                                <div class="input-field col s12">
                                                    <input id="password" type="text" class="validate" name="emailid" autocomplete="off" required>
-                                                   <label for="password">Email id</label>
+                                                   <label for="password">Email </label>
                                                </div>
                                                <div class="col s12 right-align m-t-sm">
                                                 

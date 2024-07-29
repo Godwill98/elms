@@ -40,7 +40,7 @@ else{
     <head>
 
         <!-- Title -->
-        <title>ELMS | Home Page</title>
+        <title>SLMS | Home Page</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta charset="UTF-8">
@@ -62,10 +62,11 @@ else{
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
+       
         <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
+        
+          <![endif]-->
     </head>
     <body>
         <div class="loader-bg"></div>
@@ -137,7 +138,7 @@ else{
 
                 <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
                     <li>&nbsp;</li>
-                    <li class="no-padding"><a class="waves-effect waves-grey" href="index.php"><i class="material-icons">account_box</i>Employe Login</a></li>
+                    <li class="no-padding"><a class="waves-effect waves-grey" href="index.php"><i class="material-icons">account_box</i>Employee Login</a></li>
                     <li class="no-padding"><a class="waves-effect waves-grey" href="forgot-password.php"><i class="material-icons">account_box</i>Emp Password Recovery</a></li>
 
                        <li class="no-padding"><a class="waves-effect waves-grey" href="admin/"><i class="material-icons">account_box</i>Admin Login</a></li>
@@ -164,7 +165,7 @@ else{
                                            <form class="col s12" name="signin" method="post">
                                                <div class="input-field col s12">
                                                    <input id="username" type="text" name="username" class="validate" autocomplete="off" required >
-                                                   <label for="email">Email Id</label>
+                                                   <label for="email">Email</label>
                                                </div>
                                                <div class="input-field col s12">
                                                    <input id="password" type="password" class="validate" name="password" autocomplete="off" required>

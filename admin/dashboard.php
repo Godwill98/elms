@@ -46,7 +46,7 @@ else{
                         <div class="card stats-card">
                             <div class="card-content">
                             
-                                <span class="card-title">Total Regd Employees</span>
+                                <span class="card-title">Total Employees</span>
                                 <span class="stats-counter">
 <?php
 $sql = "SELECT id from tblemployees";

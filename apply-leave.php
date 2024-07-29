@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 error_reporting(0);
@@ -17,8 +16,8 @@ if(isset($_POST['apply']))
     $description=$_POST['description'];  
     $status=0;
     $isread=0;
-    if($fromdate > $todate){
-        $error=" ToDate should be greater than FromDate ";
+    if($fromdate >= $todate){
+        $error="FromDate should be less than ToDate";
     } else {
         $sql="INSERT INTO tblleaves(LeaveType,ToDate,FromDate,Description,Status,IsRead,empid) VALUES(:leavetype,:fromdate,:todate,:description,:status,:isread,:empid)";
         $query = $dbh->prepare($sql);
@@ -123,11 +122,11 @@ if(isset($_POST['apply']))
 
                                                         <div class="input-field col m6 s12">
                                                             <label for="fromdate">From Date</label>
-                                                            <input type="text" id="fromdate" name="fromdate" required>
+                                                            <input type="text" id="fromdate" name="fromdate" class="datepicker" required>
                                                         </div>
                                                         <div class="input-field col m6 s12">
                                                             <label for="todate">To Date</label>
-                                                            <input type="text" id="todate" name="todate" required>
+                                                            <input type="text" id="todate" name="todate" class="datepicker" required>
                                                         </div>
                                                         <div class="input-field col m12 s12">
                                                             <label for="description">Description</label>
@@ -159,9 +158,8 @@ if(isset($_POST['apply']))
         <script src="assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
         <script>
             $(document).ready(function(){
-                // Introduce an error in the datepicker initialization
                 $('.datepicker').datepicker({
-                    format: 'invalid-format', // Invalid format
+                    format: 'yyyy-mm-dd', // Correct date format
                     autoClose: true,
                     showClearBtn: true
                 });
@@ -171,6 +169,3 @@ if(isset($_POST['apply']))
     </body>
 </html>
 <?php } ?>
-```
-
-In this updated code, the datepicker is initialized with an invalid date format (`format: 'invalid-format'`). This will prevent the datepicker from functioning correctly, thus making the dates unselectable.

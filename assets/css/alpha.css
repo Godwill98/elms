@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: #F4F4F4;
+    background-color: #f4f4ff;
     overflow-y: auto!important;
     overflow-x: hidden;
 }
@@ -3612,7 +3612,7 @@ body.search-app .search-input input:-ms-input-placeholder {
 .signin-page {
     height: 100%;
     width: 100%;
-    background: url('../images/mountains2.jpg') no-repeat;
+    background: url('../images/mountains2.png');
     background-size: cover;
 }
 
