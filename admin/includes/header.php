@@ -49,7 +49,7 @@
                             </a>
                         </section>
                         <div class="header-title col s3">      
-                            <span class="chapter-title">SLMS </span>
+                            <span class="chapter-title">ELMS </span>
                         </div>
                       
                         <ul class="right col s9 m3 nav-right-menu">
@@ -62,7 +62,8 @@ $query = $dbh -> prepare($sql);
 $query->bindParam(':isread',$isread,PDO::PARAM_STR);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
-$unreadcount=$query->rowCount();?>
+$unreadcount=$query->rowCount();
+?>
 
 
                                 <span class="badge"><?php echo htmlentities($unreadcount);?></span></a></li>
