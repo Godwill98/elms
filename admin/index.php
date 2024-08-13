@@ -25,8 +25,8 @@ if(isset($_POST['signin']))
 <html lang="en">
 <head>
     <!-- Title -->
-    <title>Employee Leave Management System</title>
-
+    <title>Simlaw Leave Management System</title>
+       
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta charset="UTF-8">
     <meta name="description" content="Responsive Admin Dashboard Template" />
@@ -132,7 +132,7 @@ if(isset($_POST['signin']))
 <body class="signin-page">
     <div class="mn-content valign-wrapper">
         <main class="mn-inner container">
-            <h4 class="title">Employee Leave Management System</h4>
+            <h4 class="title">Simlaw Leave Management System</h4>
             <h4 class="subtitle"><a href="../index.php">Employee Login portal</a></h4>
             <div class="valign">
                 <div class="row">

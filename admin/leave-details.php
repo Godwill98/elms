@@ -11,7 +11,7 @@ else{
 // code for update the read notification status
 $isread=1;
 $did=intval($_GET['leaveid']);  
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('Africa/nairobi');
 $admremarkdate=date('Y-m-d G:i:s ', strtotime("now"));
 $sql="update tblleaves set IsRead=:isread where id=:did";
 $query = $dbh->prepare($sql);
@@ -25,7 +25,7 @@ if(isset($_POST['update']))
 $did=intval($_GET['leaveid']);
 $description=$_POST['description'];
 $status=$_POST['status'];   
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('Africa/Nairobi');
 $admremarkdate=date('Y-m-d G:i:s ', strtotime("now"));
 $sql="update tblleaves set AdminRemark=:description,Status=:status,AdminRemarkDate=:admremarkdate where id=:did";
 $query = $dbh->prepare($sql);
@@ -138,7 +138,7 @@ foreach($results as $result)
                                              <td style="font-size:16px;"><b>Leave Type :</b></td>
                                             <td><?php echo htmlentities($result->LeaveType);?></td>
                                              <td style="font-size:16px;"><b>Leave Date . :</b></td>
-                                            <td>From <?php echo htmlentities($result->FromDate);?> to <?php echo htmlentities($result->ToDate);?></td>
+                                            <td>From <?php echo htmlentities($result->ToDate);?> to <?php echo htmlentities($result->FromDate);?></td>
                                             <td style="font-size:16px;"><b>Posting Date</b></td>
                                            <td><?php echo htmlentities($result->PostingDate);?></td>
                                         </tr>

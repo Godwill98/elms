@@ -78,7 +78,7 @@ $msg="Department record deleted";
                                 <table id="example" class="display responsive-table ">
                                     <thead>
                                         <tr>
-                                            <th>Sr no</th>
+                                            <th>Dept ID</th>
                                             <th>Dept Name</th>
                                             <th>Dept Short Name</th>
                                             <th>Dept Code</th>

@@ -22,6 +22,7 @@ if (isset($_POST['change'])) {
     unset($_SESSION['empid']);
 }
 
+// Display the password change form only if the employee ID and email are validated.
 if (isset($_POST['submit'])) {
     $empid = $_POST['empid'];
     $email = $_POST['emailid'];

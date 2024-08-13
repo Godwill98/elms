@@ -49,7 +49,7 @@
                             </a>
                         </section>
                         <div class="header-title col s3">      
-                            <span class="chapter-title">ELMS </span>
+                            <a href="dashboard.php"span class="chapter-title">Simlaw Leave Management System</a>
                         </div>
                       
                         <ul class="right col s9 m3 nav-right-menu">

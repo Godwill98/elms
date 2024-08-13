@@ -84,7 +84,7 @@ header('location:manageemployee.php');
             <main class="mn-inner">
                 <div class="row">
                     <div class="col s12">
-                        <div class="page-title">Manage EmployesWWW</div>
+                        <div class="page-title">Manage Employees</div>
                     </div>
                    
                     <div class="col s12 m12 l12">
@@ -96,7 +96,7 @@ header('location:manageemployee.php');
                                     <thead>
                                         <tr>
                                             <th>Sr no</th>
-                                            <th>Emp Id</th>
+                                            <th>Emp Code</th>
                                             <th>Full Name</th>
                                             <th>Department</th>
                                              <th>Status</th>
@@ -134,10 +134,10 @@ if($stats){
                                             <td><a href="editemployee.php?empid=<?php echo htmlentities($result->id);?>"><i class="material-icons">mode_edit</i></a>
                                         <?php if($result->Status==1)
  {?>
-<a href="manageemployee.php?inid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Are you sure you want to inactive this Employe?');"" > <i class="material-icons" title="Inactive">clear</i>
+<a href="manageemployee.php?inid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Are you sure you want to inactivate this Employe?');"" > <i class="material-icons" title="Inactive">clear</i>
 <?php } else {?>
 
-                                            <a href="manageemployee.php?id=<?php echo htmlentities($result->id);?>" onclick="return confirm('Are you sure you want to active this employee?');""><i class="material-icons" title="Active">done</i>
+                                            <a href="manageemployee.php?id=<?php echo htmlentities($result->id);?>" onclick="return confirm('Are you sure you want to activate this employee?');""><i class="material-icons" title="Active">done</i>
                                             <?php } ?> </td>
                                         </tr>
                                          <?php $cnt++;} }?>

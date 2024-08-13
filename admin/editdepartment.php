@@ -20,7 +20,7 @@ $query->bindParam(':deptcode',$deptcode,PDO::PARAM_STR);
 $query->bindParam(':deptshortname',$deptshortname,PDO::PARAM_STR);
 $query->bindParam(':did',$did,PDO::PARAM_STR);
 $query->execute();
-$msg="Department updated Successfully  &#128522;";
+$msg="Department updated Successfully";
 }
 
     ?>

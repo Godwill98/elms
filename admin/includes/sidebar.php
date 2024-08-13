@@ -2,7 +2,7 @@
                 <div class="side-nav-wrapper">
                     <div class="sidebar-profile">
                         <div class="sidebar-profile-image">
-                            <img src="../assets/images/profile-image.jpg" class="circle" alt="prof image">
+                            <img src="../assets/images/" class="circle"  alt="">
                         </div>
                         <div class="sidebar-profile-info">
                        
@@ -53,7 +53,7 @@
                                 <li><a href="pending-leavehistory.php">Pending Leaves </a></li>
                                 <li><a href="approvedleave-history.php">Approved Leaves</a></li>
                                 <li><a href="notapproved-leaves.php">Not Approved Leaves</a></li>
-                                <li><a href="analytics.php">Analytics & AI</a></li>
+                                <li><a href="export_csv.php">Reports</a></li>
        
                             </ul>
                         </div>

@@ -76,15 +76,17 @@ if(isset($_POST['signin']))
             padding: 20px;
         }
         .card-title {
-            margin: 0 0 20px 0;
+            margin-bottom: 40px;
+            
             font-size: 20px;
             font-weight: bold;
             color: #1dc4e9;
-          
+         
         }
         .input-field {
             position: relative;
             margin-bottom: 20px;
+            margin-top: 20px;
         }
         .input-field label {
             position: absolute;
@@ -158,12 +160,15 @@ if(isset($_POST['signin']))
         .additional-links a:hover {
             color: #1de9b6;
         }
+        #password, #username{
+            margin-top: 7px;
+        }
     </style>
 </head>
 <body>
     <div class="mn-content">
         <div class="page-title">
-            <h4>Employee Leave Management System</h4>
+            <h4>Simlaw Leave Management System</h4>
         </div>
 
         <div class="card">
